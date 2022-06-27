@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>IChecklist</title>
+	<!-- add icon link -->
+	<link rel = "icon" href = 
+	"icon.png" 
+			type = "x-icon">
+	<!-- CSS Import -->
+	<link rel="stylesheet" href="todolist.css" />
+	<!-- End of CSS Import -->
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;0,900;1,400&family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
+	<!-- End of Fonts -->
+</head>
+<body>
+	 <!-- Navigation Bar -->
+	 <nav>
+        <!-- Hamberger Menu-->
+        <span class="nav-toggle" id="js-nav-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+        <!-- Logo-->
+        <div class="logo">
+
+			<img class = " Logo " src="iforgot-logo.png">
+
+
+        </div>
+
+        <ul id="js-menu">
+            <li><a href='index.html'>Home</a></li> 
+            <li><a href='about.html'>About</a></li>
+            <li><a href='todolist.html'>IChecklist</a></li>
+            <li><a href='notes.html'>INotes</a></li>
+            <li><a href='Itracker.html' >ITracker</a></li>
+        </ul>
+
+
+    </nav>
+	<br><br>
+
+	<!-- Start ToDOLIST-->
+	<!-- App Wrapper -->
+	<main class="app">
+		<!-- Greeting -->
+		<section class="greeting">
+			<h2 class="title">
+				Hello: <input type="text" id="name" placeholder="Name here" />
+			</h2>
+		</section>
+		<!-- End of Greeting -->
+		
+		<!-- New Todo -->
+		<section class="create-todo">
+			<h3>CREATE A TO-DO</h3>
+			<form id="new-todo-form">
+				<h4>What's on your to-do?</h4>
+				<input 
+					type="text" 
+					placeholder="ex. Go to School ..."
+					name="content"
+					id="content" />
+				
+				<h4>Pick a category</h4>
+				<div class="options">
+					<label>
+						<input type="radio" name="category" id="category1" value="business" /> 
+						<span class="bubble business"></span>
+						<div>Business</div>
+					</label>
+					<label>
+						<input type="radio" name="category" id="category2" value="personal" />
+						<span class="bubble personal"></span>
+						<div>Personal</div>
+					</label>
+				</div>
+
+				<input type="submit" value="Add List" />
+			</form>
+		</section>
+		<!-- End of New Todo -->
+
+		<!-- Todo List -->
+		<section class="todo-list">
+			<h3>TO DO LIST</h3>
+			<div class="list" id="todo-list"></div>
+		</section>
+		<!-- End of Todo List -->
+
+	</main>
+	<!-- End of App Wrapper -->
+
+	<!-- JS Import -->
+	<script src="todolist.js"></script>
+	<!-- End of JS Import -->
+</body>
+</html>

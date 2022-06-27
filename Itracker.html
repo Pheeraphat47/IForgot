@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ITracker</title>
+        <link rel = "icon" href = 
+        "icon.png" 
+             type = "x-icon">
+     
+        <link rel="stylesheet" href="Itracker.css">
+        <!--Link font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;0,900;1,400&family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
+        <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js"></script>
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.4/css/all.css">
+
+        <script src = "Itracker.js"></script>
+    </head>
+    <body>
+        <nav>
+            <!-- Hamberger Menu-->
+            <span class="nav-toggle" id="js-nav-toggle">
+                <i class="fas fa-bars"></i>
+            </span>
+            <!-- Logo-->
+            <div class="logo">
+    
+                <img class = " Logo "src="iforgot-logo.png">
+    
+    
+            </div>
+            <!-- Menu -->
+            <ul id="js-menu">
+                <li><a href='index.html'>Home</a></li> 
+                <li><a href='about.html'>About</a></li>
+                <li><a href='todolist.html'>IChecklist</a></li>
+                <li><a href='notes.html'>INotes</a></li>
+                <li><a href='Itracker.html'>ITracker</a></li>
+            </ul>
+    
+    
+        </nav>
+        <div class = "wrapper">
+            <h1 style="text-align: center;">alarm</h1>
+            <div class = "progress">
+                <div class = "toggle-btn" id ="unact">
+                    <div class = "inner-circle"></div>
+                </div>
+                <div class = "toggle-btn active" id ="act">
+                    <div class = inner-circle></div>
+                </div>
+            </div>
+            
+        </div>
+    </body>
+</html>
